@@ -72,7 +72,7 @@ function Storage() {
         )}
       </p>
 
-      <Gallery selectedIndex={selectedIndex} images={images} />
+      <Gallery selectedIndex={selectedIndex} images={images} onClickImage={setSelectedIndex} />
     </div>
   );
 }
