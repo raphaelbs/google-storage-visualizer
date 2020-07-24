@@ -1,0 +1,44 @@
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+* {
+  margin: 0;
+  border: 0;
+}
+
+#root {
+
+  margin: 0 auto;
+
+  width: 90%;
+  max-width: 900px;
+
+}
+
+
+#userLogin {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  padding: 16px;
+}
+
+#userLogin div {
+  display: flex;
+  align-items: center;
+}
+
+#userLogin div p {
+  margin-right: 16px;
+
+}
+
+#userLogin div img {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  
+}
+

@@ -8,12 +8,10 @@ function App() {
   const [user, setUser] = React.useState(null);
 
   return (
-    <div>
-      <header>
-        {user ? <Header user={user} /> : <Login onLogin={setUser} />}
-      </header>
+    <>
+      {user ? <Header user={user} /> : <Login onLogin={setUser} />}
       <main>{user ? <Storage /> : null}</main>
-    </div>
+    </>
   );
 }
 
