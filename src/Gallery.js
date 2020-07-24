@@ -11,7 +11,7 @@ function picturesInRange(currentIndex, imagesTotal) {
   return Math.min(minImageIndex, imagesTotal - halfFrameLen);
 }
 
-function Gallery({ selectedIndex, images }) {
+function Gallery({ selectedIndex, images, onClickImage }) {
   const [frames, setFrames] = React.useState([]);
 
   React.useEffect(() => {
@@ -46,6 +46,7 @@ function Gallery({ selectedIndex, images }) {
             height={MAIN_IMAGE_SIZE / FRAME_SIZE}
             src={image.src}
             alt={image.name}
+            onClick={() => onClickImage(image.index)}
           />
         ))}
       </p>
